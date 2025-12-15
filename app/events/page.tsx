@@ -10,8 +10,6 @@ export const metadata = {
 
 // Force dynamic rendering - fetch fresh data on every request
 export const dynamic = 'force-dynamic';
-// Revalidate every 60 seconds (optional - for caching)
-export const revalidate = 60;
 
 export default async function EventsPage() {
   const events = await getEvents();
